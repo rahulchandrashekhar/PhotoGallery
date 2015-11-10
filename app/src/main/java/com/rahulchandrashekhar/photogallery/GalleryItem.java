@@ -4,6 +4,10 @@ package com.rahulchandrashekhar.photogallery;
  * Created by Rahul Chandrashekhar on 11/5/2015.
  */
 public class GalleryItem {
+    private String mCaption;
+    private String mId;
+    private String mUrl;
+
     public String getCaption() {
         return mCaption;
     }
@@ -11,8 +15,6 @@ public class GalleryItem {
     public void setCaption(String caption) {
         mCaption = caption;
     }
-
-    private String mCaption;
 
     public String getId() {
         return mId;
@@ -22,8 +24,6 @@ public class GalleryItem {
         mId = id;
     }
 
-    private String mId;
-
     public String getUrl() {
         return mUrl;
     }
@@ -32,7 +32,6 @@ public class GalleryItem {
         mUrl = url;
     }
 
-    private String mUrl;
     @Override
     public String toString() {
         return mCaption;
